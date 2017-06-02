@@ -1,3 +1,8 @@
+@font-face {
+    font-family: calculator;
+    src: url(../font/digital-7.ttf);
+}
+
 body {
 	background-color: oldlace;
 }
@@ -22,10 +27,10 @@ body {
 	height: 24em;
 }
 #result {
-	margin-top: 1.5em;
-}
-#banner {
-	font-family: Georgia, 'Times New Roman', Times, serif;
+	margin-top: 1.25em;
+	resize: none;
+	font-family: calculator;
+	font-size: 1.75em;
 }
 
 button {
@@ -41,6 +46,17 @@ button {
 	height: 6em;
 }
 
-#result {
-	resize: none;
+.hover {
+	background-color: #777786;
+    /* IE9, iOS 3.2+ */
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyYWRpYWxHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGN4PSIwJSIgY3k9IjAlIiByPSIxNDEuNDIxMzU2MjM3MzA5NSUiPjxzdG9wIHN0b3AtY29sb3I9IiM2NzY3ODQiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwLjAxMTAwMDAwMDAwMDAwMDAwMSIvPjxzdG9wIHN0b3AtY29sb3I9IiM4Nzg3OTYiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwLjUzOSIvPjxzdG9wIHN0b3AtY29sb3I9IiM2NzY3NjciIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIxIi8+PC9yYWRpYWxHcmFkaWVudD48cmVjdCB4PSItNTAiIHk9Ii01MCIgd2lkdGg9IjEwMSIgaGVpZ2h0PSIxMDEiIGZpbGw9InVybCgjdnNnZykiIC8+PC9zdmc+);
+    /* Android 2.3- hack (needed for the actual radial gradient) */
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyYWRpYWxHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGN4PSIwJSIgY3k9IjAlIiByPSIxNDEuNDIxMzU2MjM3MzA5NSUiPjxzdG9wIHN0b3AtY29sb3I9IiM2NzY3ODQiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwLjAxMTAwMDAwMDAwMDAwMDAwMSIvPjxzdG9wIHN0b3AtY29sb3I9IiM4Nzg3OTYiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwLjUzOSIvPjxzdG9wIHN0b3AtY29sb3I9IiM2NzY3NjciIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIxIi8+PC9yYWRpYWxHcmFkaWVudD48cmVjdCB4PSItNTAiIHk9Ii01MCIgd2lkdGg9IjEwMSIgaGVpZ2h0PSIxMDEiIGZpbGw9InVybCgjdnNnZykiIC8+PC9zdmc+),
+        -webkit-gradient(radial, left top, 0, left top, 723,color-stop(0.011, rgb(103, 103, 132)),color-stop(0.539, rgb(135, 135, 200)),color-stop(1, rgb(103, 103, 103)));
+    /* Android 2.3 */
+    background-image: -webkit-radial-gradient(left top, ellipse farthest-corner,rgb(103, 103, 132) 1.1%,rgb(135, 135, 200) 53.9%,rgb(103, 103, 103) 100%);
+    /* IE10+ */
+    background-image: radial-gradient(ellipse farthest-corner at left top,rgb(103, 103, 132) 1.1%,rgb(135, 135, 200) 53.9%,rgb(103, 103, 103) 100%);
+    background-image: -ms-radial-gradient(left top, ellipse farthest-corner,rgb(103, 103, 132) 1.1%,rgb(135, 135, 200) 53.9%,rgb(103, 103, 103) 100%);
+	box-shadow: 0 2px 1px black;
 }

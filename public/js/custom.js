@@ -10,6 +10,14 @@ $(document).ready(function(){
 		$('#result').val(currentVal);
 	});
 	
+	$('button').on('mouseenter', function(){
+		$(this).addClass('hover');
+	});
+	
+	$('button').on('mouseleave', function(){
+		$(this).removeClass('hover');
+	});
+	
 	
 	$('.clear').on('click', function(){
 		var temp = '';
