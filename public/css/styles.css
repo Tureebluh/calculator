@@ -31,6 +31,7 @@ body {
 	resize: none;
 	font-family: calculator;
 	font-size: 1.75em;
+	background-color: rgb(184, 196, 191);
 }
 
 button {
@@ -39,6 +40,7 @@ button {
 	height: 2.4em;
 	width: 90%;
 	border-radius: 4px;
+	font-weight: bold;
 }
 
 #addition {
