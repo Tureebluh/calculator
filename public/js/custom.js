@@ -20,7 +20,7 @@ $(document).ready(function(){
 				break;
 			case "CE":
 				// remove lastVal from currentVal
-				for (var i = 0; i < currentVal.length - lastVal.length; i++){
+				for (var i = 0; i < currentVal.length - lastVal.length + 1; i++){
 					temp += currentVal[i];
 				}
 				
@@ -39,11 +39,17 @@ $(document).ready(function(){
 	
 	
 	$('#equal').on('click', function(){
-		if ($.isNumeric(eval(currentVal))){
-			$('#result').val(eval(currentVal));
-		} else {
-			$('#result').val(ERROR);
-		}
+		currentVal = eval(currentVal);
+		$('#result').val(currentVal);
+	});
+	
+	
+	$('#percentage').on('click', function(){
+		var temp;
+		temp = eval(currentVal);
+		temp *= 100;
+		temp += '%';
+		$('#result').val(temp);
 	});
 	
 	
